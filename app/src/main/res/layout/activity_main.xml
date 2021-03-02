@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Azure">
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/author_name"
+            android:textSize="25sp"
+            android:background="@color/AntiqueWhite"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="122dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imageDescription"
+                android:src="@drawable/lab2_image2">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="137dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imageDescription"
+                android:src="@drawable/lab2_image">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imageDescription"
+                android:src="@drawable/lab2_image3">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Select a Color:"
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/color_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLayout"
+        android:orientation="horizontal"
+        android:background="@color/AntiqueWhite"
+        >
+
+        <RelativeLayout
+            android:id="@+id/partTwo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstQuestion"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="330dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="150dp"
+                android:layout_toEndOf="@id/question1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/core1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/core1" />
+
+                <RadioButton
+                    android:id="@+id/core2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/core2" />
+
+                <RadioButton
+                    android:id="@+id/core3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/core3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
+                android:layout_marginTop="70dp"
+                android:text="@string/secondQuestion"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/checkBoxGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroup1"
+                android:layout_marginStart="97dp"
+                android:layout_toEndOf="@id/question2"
+                android:orientation="vertical"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/accessory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accessory1"
+                    android:textColor="@color/Red"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/accessory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accessory2"
+                    android:textColor="@color/Blue"
+                    android:textSize="15sp"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/accessory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accessory3"
+                    android:textColor="@color/Green"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="626dp"
+        android:layout_below="@id/secondLayout"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/question3"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/question3"
+                android:layout_marginStart="110dp"
+                android:text="no"
+                android:textStyle="bold"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/question3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/switch1"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="yes">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/button_text"
+            android:background="@color/AntiqueWhite">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

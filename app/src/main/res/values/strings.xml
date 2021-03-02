@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MAP524_Lab2_CarlosFalconett</string>
+    <string name="author_name">Carlos Falconett</string>
+    <string-array name="color_array">
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
+    <string name="imageDescription">An image of a computer</string>
+    <string name="firstQuestion">Choose a core:</string>
+    <string name="secondQuestion">Choose accessories:</string>
+    <string name="core1">intel i5</string>
+    <string name="core2">intel i7</string>
+    <string name="core3">intel i9</string>
+    <string name="accessory1">Mouse</string>
+    <string name="accessory2">Keyboard</string>
+    <string name="accessory3">Screen</string>
+    <string name="question3">Do you want it now?</string>
+    <string name="button_text">Order Now</string>
+    <string name="order_message">Thank you for purchase!</string>
+    <string name="incomplete_message">Form is incomplete, please choose a core.</string>
+</resources>
